@@ -1,6 +1,4 @@
-# README #
-
-Ukesoppgaver for MAT1001
+# Ukesoppgaver for MAT1001 #
 
 .pdf filene er løsningsforslag
 .tex filene viser latex koden for å generere pdf'en
