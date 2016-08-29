@@ -7,6 +7,14 @@ def assertLinEq(a, b, c):
     print la.solve(a, b)
     assert np.allclose(la.solve(a, b), c)
 
+def assertRaises(a, b, c):
+    try:
+        la.solve(a, b)
+    except:
+        assert True
+    else:
+        assert False
+
 # A.1.6
 print("a")
 a = np.array([[1,1,2], [-1,-2,3], [3,-7,4]])
