@@ -1,0 +1,29 @@
+\documentclass[10pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{float}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\problem}[1]{\subsection*{#1}}
+\newcommand{\subproblem}[1]{\subsubsection*{#1}}
+\newcommand{\rscript}[1]{\lstinputlisting[language=R]{#1.r}}
+\newcommand{\xni}[1]{\bar{x}_{#1\cdot}}
+\newcommand{\Xni}[1]{\bar{X}_{#1\cdot}}
+\newcommand{\exfig}[1]{
+\begin{figure}[H]
+\includegraphics{#1}
+\end{figure}
+}
+\newcommand{\avg}[1]{\bar{#1}}
+\newcommand{\med}[1]{med{x}}
+\newcommand{\wave}[1]{\tilde{#1}}
+\newcommand{\dx}[0]{dx}
+\newcommand{\set}[1]{\left\{ #1 \right \}}
+\newcommand{\pardiff}[2]{\frac{\partial #1}{\partial #2}}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
