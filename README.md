@@ -6,7 +6,7 @@
 
 kjør:
 
-> git clone git@bitbucket.org:knutdr/mat1001.git
+> git clone git@github.com:knutdrand/MAT1001.git
 
 for å laste ned
 og 
