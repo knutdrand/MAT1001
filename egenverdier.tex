@@ -1,0 +1,110 @@
+\include{mathheader}
+
+\begin{document}
+
+\problem{Likevektstilstand I}
+Finn egenverdiene og egenvektorene for matrisen
+\begin{align*}
+  M&=
+  \begin{pmatrix}
+    0.5 & 0.5 \\
+    0 & 1 \\
+  \end{pmatrix}
+\end{align*}
+\subproblem{Solution:}
+Egenverdiene for systemet er gitt ved:
+\begin{align*}
+  \vec{M}v &= \lambda v\\
+  (\vec{M}-\lambda \vec{I})v &= 0\\
+  \det{\vec{M}-\lambda \vec{I}} &= 0\\
+  \det{
+  \begin{pmatrix}
+    0.5-\lambda & 0.5 \\
+    0 & 1 -\lambda\\
+  \end{pmatrix}
+  }&= 0\\ 
+  (0.5-\lambda)(1-\lambda)-0 &= 0\\
+  \lambda & \in \set{0.5, 1}\\
+  \lambda_1 &= 0.5\\
+  \lambda_2 &= 1\\
+\end{align*}
+Egenvektorene for $\lambda_1 = 0.5$er gitt ved:
+\begin{align*}
+  \vec{M}v_1 &= \lambda_1 v_1\\
+  (\vec{M}-\lambda_1\vec{I})v_1 &= 0\\
+  \begin{pmatrix}
+    0.5-0.5 & 0.5 \\
+    0 & 1-0.5 \\
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_1\\
+    y_1\\
+  \end{pmatrix}&=0\\
+  \begin{pmatrix}
+    0 & 0.5 \\
+    0 & 0.5 \\
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_1\\
+    y_1\\
+  \end{pmatrix}&=0\\
+\end{align*}
+Som gir ligningene:
+\begin{align*}
+  0.5y_1 &= 0\\
+  0.5y_1 &= 0\\
+  \\
+  y_1 &= 0\\
+\end{align*}
+Vi vet ingenting om $x_1$ så vi setter den som fri variabel og får:
+\begin{align*}
+  v_1 &\in \set{
+        \begin{pmatrix}
+          t\\
+          0\\
+        \end{pmatrix}:
+  t \in R \setminus 0}
+\end{align*}
+Tilsvarende får vi egenvektorene for $\lambda_2 = 1$:
+\begin{align*}
+  \vec{M}v_2 &= \lambda_2 v_2\\
+  (\vec{M}-\lambda_2\vec{I})v_2 &= 0\\
+  \begin{pmatrix}
+    0.5-1 & 0.5 \\
+    0 & 1-1 \\
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_2\\
+    y_2\\
+  \end{pmatrix}&=0\\
+  \begin{pmatrix}
+    -0.5 & 0.5 \\
+    0 & 0 \\
+  \end{pmatrix}
+  \begin{pmatrix}
+    x_2\\
+    y_2\\
+  \end{pmatrix}&=0\\
+\end{align*}
+Som gir ligningene:
+\begin{align*}
+  -0.5x_2 + 0.5y_2 &= 0\\
+  0&= 0\\
+  \\
+  x_2 &= y_2\\
+\end{align*}
+Ved å bruke $y_2=t$ som fri variabel får vi:
+\begin{align*}
+  v_2 \in \set{
+  \begin{pmatrix}
+    t \\
+    -t \\
+  \end{pmatrix}
+  : t \in R \setminus 0 
+  }
+\end{align*}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

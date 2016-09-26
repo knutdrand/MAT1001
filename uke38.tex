@@ -1,0 +1,33 @@
+\include{mathheader}
+\begin{document}
+
+\problem{A.5.4}
+\subproblem{a}
+\begin{align*}
+  &\set{n+1}^5_{n=0}\\
+  \underset{u=n+2}=&\set{(u-2)+1}^{5+2}_{u=0+2}\\
+  =&\set{u-1}^7_{u=2}\\
+  =&\set{n-1}^7_{n=2}\\
+\end{align*}
+\subproblem{c}
+\begin{align*}
+  &\set{2n}_{n=0}^{10}\\
+  \underset{u=n+2}=&\set{2(u-2)}_{u=0+2}^{10+2}\\
+  =&\set{2u-4}_{u=2}^{12}\\
+  \neq &\set{2u-2}_{u=2}^{12}\\
+\end{align*}
+\subproblem{d}
+\begin{align*}
+  &\set{(-1)^n n}^{10}_{n=2}\\
+  \underset{u=n-2}=&\set{(-1)^{u+2} (u+2)}^{10-2}_{u=2-2}\\
+  =&\set{(-1)^2(-1)^{u} (u+2)}^{8}_{u=0}\\
+  \underset{(-1)^2=1}=&\set{(-1)^{u} (u+2)}^{8}_{u=0}\\
+  =&\set{(-1)^{n} (n+2)}^{8}_{n=0}\\
+\end{align*}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
